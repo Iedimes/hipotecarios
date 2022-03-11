@@ -40,7 +40,7 @@ class MhController extends Controller
             ['id', 'codigo', 'proyecto', 'documento', 'adjudicatario', 'fecha_ins', 'institucion_acreedora', 'obs', 'fecha_reins'],
 
             // set columns to searchIn
-            ['id', 'proyecto', 'documento', 'adjudicatario', 'institucion_acreedora', 'obs']
+            ['codigo', 'proyecto', 'documento', 'adjudicatario', 'fecha_ins', 'institucion_acreedora', 'obs', 'fecha_reins']
         );
 
         if ($request->ajax()) {
@@ -164,6 +164,9 @@ class MhController extends Controller
         return redirect()->back();
     }
 
+
+
+
     /**
      * Remove the specified resources from storage.
      *
@@ -185,4 +188,7 @@ class MhController extends Controller
 
         return response(['message' => trans('brackets/admin-ui::admin.operation.succeeded')]);
     }
+
+
+
 }
