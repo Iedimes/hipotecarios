@@ -99,6 +99,9 @@
                                                 <form class="col" @submit.prevent="deleteItem(item.resource_url)">
                                                     <button type="submit" class="btn btn-sm btn-danger" title="{{ trans('brackets/admin-ui::admin.btn.delete') }}"><i class="fa fa-trash-o"></i></button>
                                                 </form>
+                                                {{--<form class="col" @submit.prevent="pickeitor()">
+                                                    <button type="submit" class="btn btn-sm btn-success" title="{{ trans('brackets/admin-ui::admin.btn.delete') }}"><i class="fa fa-trash-o"></i></button>
+                                                </form>--}}
                                             </div>
                                         </td>
                                     </tr>
