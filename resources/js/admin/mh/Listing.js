@@ -8,7 +8,7 @@ Vue.component('mh-listing', {
 
             this.$modal.show('dialog', {
                 title: 'Atención!',
-                text: '¿Desea eliminar este elemento?',
+                text: '¿Desea eliminar este registro?',
                 buttons: [{ title: 'No, cancelar.' }, {
                     title: '<span class="btn-dialog btn-danger">Si, borrar.<span>',
                     handler: function handler() {
