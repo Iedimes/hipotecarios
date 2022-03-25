@@ -35,7 +35,7 @@
     <div :class="isFormLocalized ? 'col-md-4' : 'col-sm-8'">
         <div class="input-group input-group--custom">
             <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-            <datetime v-model="form.fecha_ins" :config="datePickerConfig" v-validate="" class="flatpickr" :class="{'form-control-danger': errors.has('fecha_ins'), 'form-control-success': fields.fecha_ins && fields.fecha_ins.valid}" id="fecha_ins" name="fecha_ins" placeholder="{{ trans('brackets/admin-ui::admin.forms.select_a_date') }}"></datetime>
+            <datetime v-model="form.fecha_ins" :config="datetimePickerConfig" v-validate="" class="flatpickr" :class="{'form-control-danger': errors.has('fecha_ins'), 'form-control-success': fields.fecha_ins && fields.fecha_ins.valid}" id="fecha_ins" name="fecha_ins" placeholder="{{ trans('brackets/admin-ui::admin.forms.select_a_date') }}"></datetime>
         </div>
         <div v-if="errors.has('fecha_ins')" class="form-control-feedback form-text" v-cloak>@{{ errors.first('fecha_ins') }}</div>
     </div>
@@ -62,7 +62,7 @@
     <div :class="isFormLocalized ? 'col-md-4' : 'col-sm-8'">
         <div class="input-group input-group--custom">
             <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-            <datetime v-model="form.fecha_reins" :config="datePickerConfig" v-validate="" class="flatpickr" :class="{'form-control-danger': errors.has('fecha_reins'), 'form-control-success': fields.fecha_reins && fields.fecha_reins.valid}" id="fecha_reins" name="fecha_reins" placeholder="{{ trans('brackets/admin-ui::admin.forms.select_a_date') }}"></datetime>
+            <datetime v-model="form.fecha_reins" :config="datetimePickerConfig" v-validate="" class="flatpickr" :class="{'form-control-danger': errors.has('fecha_reins'), 'form-control-success': fields.fecha_reins && fields.fecha_reins.valid}" id="fecha_reins" name="fecha_reins" placeholder="{{ trans('brackets/admin-ui::admin.forms.select_a_date') }}"></datetime>
         </div>
         <div v-if="errors.has('fecha_reins')" class="form-control-feedback form-text" v-cloak>@{{ errors.first('fecha_reins') }}</div>
     </div>
